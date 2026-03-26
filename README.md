@@ -1,4 +1,4 @@
-# 📈 AI Stock Insight Dashboard
+# 📈 AI Stock Dashboard
 
 這是一款專為技術分析與趨勢判斷設計的 **AI 股票數據可視化應用程式**。旨在提供極致流暢的看盤體驗，並結合多項專業技術指標與多國語系支援。
 
