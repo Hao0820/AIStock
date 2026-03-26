@@ -1,0 +1,101 @@
+export const zhTW = {
+  // Common
+  'common.loading': '載入中...',
+  'common.error': '錯誤',
+  'common.back': '返回',
+
+  // Onboarding
+  'onboarding.title': '未來已來',
+  'onboarding.subtitle': '下一世代的專業 AI',
+  'onboarding.description': '搭載自行搭建的 Neural Engine，即時深度分析全球交易市場與多維度技術指標。',
+  'onboarding.button.start': '設定',
+  'onboarding.beta.message': 'BETA 封測版 - 僅供邀請用戶',
+
+  // Nav
+  'nav.title': 'AI Stock',
+  'nav.tab.analysis': '智能分析',
+  'nav.tab.history': '歷史紀錄',
+
+  // Analysis Tab
+  'analysis.layer': 'AI 模型',
+  'analysis.identifier': '股票代碼',
+  'analysis.input.placeholder': '輸入代碼或名稱 (e.g. 2330.TW 或 AAPL)',
+  'analysis.error.empty': '請輸入股票代碼或名稱',
+  'analysis.error.notFound': '找不到 "{0}" 相關的股票，請確認代碼是否正確。',
+  'analysis.button.searching': '搜尋中...',
+  'analysis.button.start': '開始分析',
+
+  // History Tab
+  'history.title': '近期分析紀錄',
+  'history.empty.title': '未找到任何分析軌跡',
+  'history.empty.desc': '您的每一次分析與預測都將安全地加密儲存於此。目前尚未有任何紀錄，請至「智能分析」頁面開啟您的第一筆交易研究。',
+
+  // Settings
+  'settings.title': '系統設定',
+  'settings.model.title': 'AI 模型選擇',
+  'settings.model.pulse.desc': '平衡速度與精確度',
+  'settings.model.neural.desc': '高波動市場專用',
+  'settings.model.quant.desc': '深度量化分析',
+  'settings.search.lang.title': '搜尋語系設定',
+  'settings.search.lang.zh': '中文',
+  'settings.search.lang.en': 'English',
+  'settings.candle.title': 'K棒顏色風格',
+  'settings.candle.tw': '台灣習慣 (預設)',
+  'settings.candle.global': '國際習慣 (美股)',
+  'settings.candle.up': '漲',
+  'settings.candle.down': '跌',
+  'settings.theme.title': '介面主題',
+  'settings.theme.light': '淺色模式',
+  'settings.theme.dark': '深色模式',
+  'settings.privacy.title': '隱私保護已開啟',
+  'settings.privacy.desc': '您的分析數據僅存儲於本地',
+
+  // Detail Screen
+  'detail.marketData': '市場數據',
+  'detail.indicators': '技術指標',
+  'detail.res.day': '日',
+  'detail.res.week': '週',
+  'detail.res.month': '月',
+  'detail.indicator.ma5': '5日均線',
+  'detail.indicator.ema12': '12日指數均線',
+  'detail.indicator.bb': '布林通道(21)',
+  'detail.indicator.rsi': 'RSI 強弱指標',
+  'detail.indicator.kd': 'KD 隨機指標',
+  'detail.indicator.macd': 'MACD 指標',
+  'detail.tooltip.vol': '成交量',
+
+  // AI Advice
+  'ai.advice.title': 'AI 投資建議',
+  'ai.advice.buy': '建議購入 BUY',
+  'ai.advice.confidence': '信心指數',
+  'ai.advice.targetPrice': '目標價',
+
+  // News Sentiment
+  'news.sentiment.title': '新聞情緒分析',
+  'news.sentiment.bullish': '看漲 Bullish',
+  'news.sentiment.positive': '正面情緒',
+  'news.sentiment.neutral': '中立',
+  'news.sentiment.negative': '負面',
+  'news.sentiment.quote': '"AI 偵測到近期正面報導顯著提升。"',
+
+  // AI Multi-dimensional
+  'ai.multi.title': 'AI 多維度規劃',
+  'ai.multi.subtitle': 'Neural Engine v4.2 Analysis (Demo Data)',
+  'ai.multi.tab.short': '近期',
+  'ai.multi.tab.medium': '中期',
+  'ai.multi.tab.long': '遠期',
+
+  'ai.multi.short.title': '突破訊號確認',
+  'ai.multi.short.desc': '短期內股價形成強力支撐。隨着 5 MA 向上穿越 20 MA，技術面呈現典型的多頭排列。',
+  'ai.multi.medium.title': '基本面優化',
+  'ai.multi.medium.desc': '中期（1-3 季）核心動能來自營收穩定成長與良率提升。預計毛利率將穩定增長。',
+  'ai.multi.long.title': '全球佈局與領導地位',
+  'ai.multi.long.desc': '長期戰略重點在於技術護城河的鞏固。',
+
+  // Disclaimer
+  'disclaimer.title': '投資建議免責聲明',
+  'disclaimer.desc': '本分析報告目前部份文字由靜態預覽生成，圖表與頂部報價為真實市場資料。僅供參考之用，不構成任何形式的投資建議、要約或邀請。'
+};
+
+export type Translations = typeof zhTW;
+export type TranslationKey = keyof Translations;

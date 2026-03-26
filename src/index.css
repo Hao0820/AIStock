@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-on-primary-fixed: var(--on-primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-container: var(--tertiary-container);
+
+  --color-error: var(--error);
+  --color-error-container: var(--error-container);
+
+  --color-surface: var(--surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-variant: var(--surface-variant);
+
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+:root {
+  --primary: #4edea3;
+  --primary-container: #10b981;
+  --on-primary: #003824;
+  --on-primary-fixed: #002113;
+  --primary-fixed-dim: #4edea3;
+
+  --secondary: #adc6ff;
+  --secondary-container: #0566d9;
+
+  --tertiary: #ffb3af;
+  --tertiary-container: #fc7c78;
+
+  --error: #ffb4ab;
+  --error-container: #93000a;
+
+  --surface: #0e131f;
+  --surface-dim: #0e131f;
+  --surface-container-lowest: #080e1a;
+  --surface-container-low: #161c28;
+  --surface-container: #1a202c;
+  --surface-container-high: #242a36;
+  --surface-container-highest: #2f3542;
+  --surface-variant: #2f3542;
+
+  --on-surface: #dde2f3;
+  --on-surface-variant: #94a3b8;
+  --outline: #86948a;
+  --outline-variant: #334155;
+}
+
+.light {
+  --primary: #006d45;
+  --primary-container: #4edea3;
+  --on-primary: #ffffff;
+  --on-primary-fixed: #002113;
+  --primary-fixed-dim: #4edea3;
+
+  --secondary: #0056d2;
+  --secondary-container: #adc6ff;
+
+  --tertiary: #9c423f;
+  --tertiary-container: #ffb3af;
+
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+
+  --surface: #f8f9ff;
+  --surface-dim: #d9dae0;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f2f3f9;
+  --surface-container: #eceef4;
+  --surface-container-high: #e6e8ee;
+  --surface-container-highest: #e1e2e8;
+  --surface-variant: #dee3eb;
+
+  --on-surface: #191c20;
+  --on-surface-variant: #42474e;
+  --outline: #72777f;
+  --outline-variant: #c2c7cf;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom utility for glass panels */
+@utility glass-panel {
+  background-color: var(--surface-container-low);
+  opacity: 0.8;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@utility bg-glow-radial {
+  background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--primary) 8%, transparent) 0%, transparent 70%);
+}
+
+/* Hide TradingView Watermark in lightweight-charts */
+.tv-lightweight-charts-canvas-box + div > a,
+#tv-attr-logo,
+a[href*="tradingview.com"] {
+  display: none !important;
+}
+
